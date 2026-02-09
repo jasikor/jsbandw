@@ -8,9 +8,9 @@ function M.setup()
     gray3 = "#303030",
     white = "#999999",
     bright = "#dddddd",
-    red = "#96391d",
-    green = "#40b041",
-    blue = "#89b5fa",
+    red = "#e85c41",
+    green = "#A6C94a",
+    blue = "#247cb3",
   }
 
   local hightlights = {
@@ -29,7 +29,7 @@ function M.setup()
     DiagnosticUnderlineError = { link = "Normal" },
     DiagnosticHint = { fg = colors.green, italic = true },
     Diagnostic = { fg = colors.green, italic = true },
-    LspInlayHint = { fg = colors.green, italic = true },
+    LspInlayHint = { fg = colors.blue, italic = true },
     SnacksIndent = { fg = colors.gray1 },
     SnacksIndentScope = { fg = colors.gray3 },
     -- Treesitter
