@@ -35,6 +35,7 @@ function M.setup()
     -- Treesitter
     ["@variable"] = { link = "Normal" },
     ["@lsp.typemod.function.declaration.rust"] = { fg = colors.bright, bold = true },
+    ["@lsp.typemod.method.declaration.rust"] = { fg = colors.bright, bold = true },
   }
 
   for group, opts in pairs(hightlights) do
