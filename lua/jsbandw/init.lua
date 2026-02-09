@@ -1,0 +1,45 @@
+local M = {}
+
+function M.setup()
+  local colors = {
+    black = "#000000",
+    gray1 = "#101010",
+    gray2 = "#202020",
+    gray3 = "#303030",
+    white = "#bbbbbb",
+    bright = "#dddddd",
+    red = "#d38b88",
+    green = "#40b041",
+    blue = "#89b5fa",
+  }
+
+  local hightlights = {
+    Normal = { fg = colors.white, },
+    Type = { link = "Normal" },
+    Special = { link = "Normal" },
+    Constant = { link = "Normal" },
+    Delimiter = { link = "Normal" },
+    Operator = { link = "Normal" },
+    Identifier = { link = "Normal" },
+    String = { link = "Normal" },
+    Function = { link = "Normal" },
+    Keyword = { link = "Normal" },
+    Statement = { link = "Normal" },
+    DiagnosticError = { fg = colors.red, italic = true },
+    DiagnosticUnderlineError = { link = "Normal" },
+    DiagnosticHint = { fg = colors.green, italic = true },
+    Diagnostic = { fg = colors.green, italic = true },
+    LspInlayHint = { fg = colors.green, italic = true },
+    SnacksIndent = { fg = colors.gray1 },
+    SnacksIndentScope = { fg = colors.gray3 },
+    -- Treesitter
+    ["@variable"] = { link = "Normal" },
+    ["@lsp.typemod.function.declaration.rust"] = { fg = colors.bright, bold = true },
+  }
+
+  for group, opts in pairs(hightlights) do
+    vim.api.nvim_set_hl(0, group, opts)
+  end
+end
+
+return M
