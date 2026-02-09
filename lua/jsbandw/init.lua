@@ -6,9 +6,9 @@ function M.setup()
     gray1 = "#101010",
     gray2 = "#202020",
     gray3 = "#303030",
-    white = "#bbbbbb",
+    white = "#999999",
     bright = "#dddddd",
-    red = "#d38b88",
+    red = "#96391d",
     green = "#40b041",
     blue = "#89b5fa",
   }
