@@ -25,6 +25,7 @@ function M.setup()
     Function = { link = "Normal" },
     Keyword = { link = "Normal" },
     Statement = { link = "Normal" },
+    PreProc = { link = "Normal" },
     DiagnosticError = { fg = colors.red, italic = true },
     DiagnosticUnderlineError = { link = "Normal" },
     DiagnosticHint = { fg = colors.green, italic = true },
