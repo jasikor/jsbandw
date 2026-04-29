@@ -11,7 +11,7 @@ function M.setup()
     red = "#e85c41",
     green = "#A6C94a",
     blue = "#247cb3",
-    yellow = "#f0e640",
+    yellow = "#ffff00",
   }
 
   local hightlights = {
