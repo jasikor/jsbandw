@@ -43,6 +43,7 @@ function M.setup()
     SnacksPickerDirectory = { fg = colors.bright },
     SnacksPickerPathIgnored = { fg = colors.white },
     SnacksPickerPathHidden = { fg = colors.white },
+    Cursor = { bg = colors.bright, fg = colors.black },
   }
 
   for group, opts in pairs(hightlights) do
