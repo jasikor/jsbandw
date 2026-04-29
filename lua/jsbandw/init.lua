@@ -45,7 +45,7 @@ function M.setup()
     SnacksPickerPathIgnored = { fg = colors.white },
     SnacksPickerPathHidden = { fg = colors.white },
     Cursor = { bg = colors.yellow, fg = colors.black },
-    CursorLine = { bg = "#606060" },
+    CursorLine = { bg = colors.white },
   }
 
   for group, opts in pairs(hightlights) do
