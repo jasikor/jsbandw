@@ -26,6 +26,7 @@ function M.setup()
     Keyword = { link = "Normal" },
     Statement = { link = "Normal" },
     PreProc = { link = "Normal" },
+    Visual = { bg = colors.gray3 },
     DiagnosticError = { fg = colors.red, italic = true },
     DiagnosticUnderlineError = { link = "Normal" },
     DiagnosticHint = { fg = colors.green, italic = true },
@@ -37,6 +38,11 @@ function M.setup()
     ["@variable"] = { link = "Normal" },
     ["@lsp.typemod.function.declaration.rust"] = { fg = colors.bright, bold = true },
     ["@lsp.typemod.method.declaration.rust"] = { fg = colors.bright, bold = true },
+    SnacksPickerDir = { fg = colors.bright },
+    SnacksPickerFile = { fg = colors.bright },
+    SnacksPickerDirectory = { fg = colors.bright },
+    SnacksPickerPathIgnored = { fg = colors.white },
+    SnacksPickerPathHidden = { fg = colors.white },
   }
 
   for group, opts in pairs(hightlights) do
