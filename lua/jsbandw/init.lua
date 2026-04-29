@@ -11,6 +11,7 @@ function M.setup()
     red = "#e85c41",
     green = "#A6C94a",
     blue = "#247cb3",
+    yellow = "#f0e640",
   }
 
   local hightlights = {
@@ -43,7 +44,7 @@ function M.setup()
     SnacksPickerDirectory = { fg = colors.bright },
     SnacksPickerPathIgnored = { fg = colors.white },
     SnacksPickerPathHidden = { fg = colors.white },
-    Cursor = { bg = colors.bright, fg = colors.black },
+    Cursor = { bg = colors.yellow, fg = colors.black },
   }
 
   for group, opts in pairs(hightlights) do
